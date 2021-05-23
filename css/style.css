@@ -4,18 +4,16 @@
   padding: 0;
 }
 
-body {
-  color: #39a6b2;
+body { 
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
-padding: 0;
-background-color: #a8adba; /*change to lighter color*/
+  padding: 0;
+  background-color: #a8adba; /*change to lighter color*/
 }
-
-
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  
   padding: 20px 35px;
   background-color: black;
   display: flex;
@@ -36,7 +34,7 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color:gray;
+  color:blue;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -46,7 +44,7 @@ header a {
 }
 
 header nav {
-  margin: 7px 0;
+  margin: 5px 0;
 }
 
 header nav ul {
@@ -75,7 +73,7 @@ header nav ul li a:hover {
 
 /* STYLE ALL SECTION TAGS */
 section {
-  padding: 60px;
+  padding: 30px;
 }
 
  /*about me starts */
@@ -140,6 +138,7 @@ width: 100%;
 /* SECTION TITLE STYLES START */
 .section-title {
   font-size: 60px;
+  font-style: italic;
   /*border-bottom: 3px solid;*/
   color: #024e76;
   padding-bottom: 20px;
