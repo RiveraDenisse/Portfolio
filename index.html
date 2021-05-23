@@ -12,11 +12,11 @@
            <h1>
             Denisse Rivera
             </h1>
-            <nav> <!-- Unordered list element-->
+            <nav> <!-- unordered list element-->
                 <ul>
-                    <!--List Element-->
+                    <!--list Element-->
                     <li>
-                        <!--Anchor element-->
+                        <!--anchor element-->
                         <a href="#about-me">About me</a>
                     </li>
                     <li>
@@ -32,23 +32,30 @@
             </nav>
         </header>
        
-        <!--jumbotron-->
-        <section id ="about-me" class="hero"> <!--included id to link anchor element-->
-            <div class="hero-cta"> <!--About me section starts-->
-                <h2>About me</h2> 
-                <p>I am an electrical engineer (with a computer engineering emphasis)  currently working for an electric utility. 
+        <!--about me and profile pic section starts-->
+        <section id ="about-me" class="hero"> 
+
+            <!--about me box starts here-->
+            <div class="aboutmebox"> 
+                <h2 class="section-title">About me</h2> 
+                <div class="aboutme">
+                    <p>I am an electrical engineer (with a computer engineering emphasis)  currently working for an electric utility. 
                     After 10 years of working with utilities and consultants I decided it was time to go back to computers, so I enrolled 
                     on a programming bootcamp to learn and get some experience with different languages (i.e HTML, CSS, Javascript). 
                     My spare time consists of playing video games, watching series/movies and play with my three dogs.
-                </p>
-            </div> <!--About me section ends-->
-            <div class="profile-pic"> <!--ADD A PROFILE PICTURE SECTION-->
-                <img src = "" alt = "Denisse profile picture" />
-            </div>
+                    </p>
+                </div>
+                <div class="profile-pic">
+                    <img src="./css/images/profilepic.png" alt="Denisse's avata picture">
+                    
+                </div>
+            </div> 
         </section>
-        <!--ends profile picture section-->
+           <!--about me box ends-->
+      
+        <!--about me and profile pic section ends-->
            
-        <!-- resume start -->
+        <!-- resume section starts -->
           <section id="resume" class="steps">
             <div class="flex-row">
               <h2 class="section-title secondary-border">
@@ -57,14 +64,12 @@
             </div>
             <div class="step">
               <a href="./denisserivera.pdf" target="_blank" download>
+                <img src ="./css/images/resume.jpg" width="100px">
                 <h3>Click this link in order to open my resume</h3>
-                </a>
-                <div class="step-info">
-                    <h3>Scan the code below to go my github</h3>
-                    <img src="./css/images/qrcode_github.png" />
-                    <!-- add link to resume-->                
-                </div>
-            </div>           
+                </a> </div>
+               
+                
+            <!--</div>  -->         
           </section>
         <!--resume section ends-->
 
