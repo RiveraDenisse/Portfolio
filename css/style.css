@@ -520,27 +520,26 @@ text-align: center;
  /* FOOTER STYLES START */
  footer {
   background: #fce138;
-  padding: 40px 35px;
+  padding: 40px 400px 40px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   flex-wrap: wrap;
   width: 100%;
 }
 
 footer h2 {
   color: #024e76;
-  font-size: 30px;
+  font-size: 60px;
   margin: 0;
 }
 
-footer div {
+footer div ul{
   line-height: 1.5;
-  text-align: right;
+  
 }
 
-footer a {
-  color: #024e76;
-}
+
+
 /* END FOOTER STYLES */
 /* UTILITIES */
 .text-left {
