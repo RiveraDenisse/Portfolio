@@ -8,12 +8,11 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #a8adba; /*change to lighter color*/
+  background-color: #d4d4d4; /*change to lighter color*/
 }
 /* HEADER / NAV BAR STYLES START */
 
-header {
-  
+header {  
   padding: 20px 35px;
   background-color: black;
   display: flex;
@@ -32,15 +31,17 @@ header {
 
 header h1 {
   font-weight: bold;
+  font-style: italic;
   margin: 0;
-  font-size: 36px;
-  color:blue;
+  font-size: 50px;
+  color:  #024e76;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
-  color: #fce138;
+  color: #024e76;
+  
 }
 
 header nav {
@@ -58,27 +59,25 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 2.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-  background: #fce138;
-  color: #024e76;
+  background: rgba(2, 78, 118, 0.2);
   border-radius: 15px;
   text-shadow: none;
 }
 
 /* HEADER / NAVBAR STYLES END */
+/*about me starts */
 
-/* STYLE ALL SECTION TAGS */
 section {
   padding: 30px;
 }
 
- /*about me starts */
 .hero {
-  padding: 50px 0;
+  padding: 50px 40px 0;
   background-color: #d4d4d4;
   background-size: cover;
   background-position: center;
@@ -98,7 +97,7 @@ section {
   font-style: italic;
   font-size: 60px;
   text-align: right;
-  color: #fce138;
+  color: rgb(2, 78, 118);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding-right: 10px;
 }
@@ -118,40 +117,35 @@ section {
 }
 
 .profile-pic {
-  position: relative;
   flex: 1 40%;
   margin: 10px;
 }
-.profile-pic h4, .pic1 h4 {
+
+.profile-pic h4, {
   position: absolute;
   bottom: 20px;
   left: 20px;    
   font-size: 26px;
 }
+
 .profile-pic img {
 height: 300px;
 width: 100%;
 }
 
-/*about me/profile  section ends*/
-
-/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 60px;
   font-style: italic;
-  /*border-bottom: 3px solid;*/
   color: #024e76;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
 }
+/*about me/profile  section ends*/
 
-.primary-border {
-  border-color: #fce138;
-}
+/*projects section start*/
 
-/* MEET THE TRAINERS START */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -160,66 +154,7 @@ width: 100%;
   justify-content: space-around;
 }
 
-.projects {
-  width: 45%;
-  border-radius: 14px;
-  border: 4px solid red;
-  background-size: cover;
-  font-size: 22px;
-  margin-bottom: 15px;
-  padding:20px 0;
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  /*padding: 25px;
-  line-height: 1.3;*/
-}
-
-.projects h3 {
-  /*font-size: 28px;*/
-  margin-top: auto;
-  width: 100%;
-  background-color: #a8adba;
-  color: #393b4f;
-  padding: 10px 5px;
-  text-align: center;
-}
-
-.projects h4 {
-  font-weight: lighter;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.projects p {
-  font-size: 17px;
-}
-
-/* TRAINER STYLES END */
-
-/* REACH OUT STYLES START */
-.contact {
-  background: #024e76;
-}
-
-.contact h2 {
-  color: #fce138;
-}
-
-/* REACH OUT STYLES END */
-
-/*FROM CSS FLEXBOX*/
   /* flex parent */
-.flex-container1 {
-/* create flexbox */
-display: flex;
-/* instruct it to break onto next line if it runs out of space */
-flex-wrap: wrap;
-/* put all unused space between items */
-justify-content: space-between;
-width: 100%;
-}
-
 .flex-item1 {
 /* make each one 45%, putting 10% between each element on the page */
 width: 45%;
@@ -285,19 +220,24 @@ flex-direction: column;
 }
 
 /* for text area inside of flex item */
-.flex-item span {
+.flex-item span a, .flex-item1 span a {
 /* pushes element to bottom of flex item */
 margin-top: auto;
 width: 100%;
-background-color: rgba(3, 3, 3, 0.4);
-color: #393b4f;
+background-color: rgba(3, 3, 5, 0.5);
+color: white;
 padding: 10px 5px;
 text-align: center;
 }
 
+.flex-item span a:hover , .flex-item1 span a:hover{
+  background: rgba(2, 78, 118, 0.2);
+  color: #024e76;  
+}
+
  /* footer start */
  footer {
-  background: #fce138;
+  background: #d4d4d4;
   padding: 40px 400px 40px 0px;
   display: flex;
   justify-content: right;
@@ -366,13 +306,6 @@ footer div ul{
     width: 80%;
   }
   
-  .project {
-    flex: 0 50%;
-  }
-  
-  .contact-info iframe{
-    flex: 1 100%;
-  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -386,31 +319,13 @@ footer div ul{
     text-align: center;
   }
 
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
 .profile-pic {
   flex: 0 32%;
   margin-right: 0;
   margin-top: 15px;
   margin-bottom: 15;
 }
-  .projects h3, .projects h4 {
-    display: block;
-  }
+
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -423,23 +338,4 @@ footer div ul{
     width: 95%;
   }
 
-  .intro p {
-    width: 100%;
-  }
-
-  .project {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
-  }
 }
