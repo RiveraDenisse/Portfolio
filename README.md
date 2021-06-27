@@ -5,6 +5,7 @@ Professional portfolio showing my most recent projects/place-holders. By clickin
 All the material will be updated in the future. 
 
 Link to live website: https://riveradenisse.github.io/Portfolio/
+
 Github : https://github.com/RiveraDenisse/Portfolio
 
 * ![screenshot](/css/images/screencaptureweek2.png)
