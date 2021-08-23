@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body { 
+body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 /* HEADER / NAV BAR STYLES START */
 
-header {  
+header {
   padding: 20px 35px;
   background-color: black;
   display: flex;
@@ -21,12 +21,11 @@ header {
   position: sticky;
   /*position: -webkit-sticky;*/
   top: 0;
-  
+
   background-image: url("./images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
- 
 }
 
 header h1 {
@@ -34,14 +33,13 @@ header h1 {
   font-style: italic;
   margin: 0;
   font-size: 50px;
-  color:  #024e76;
+  color: #024e76;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
   color: #024e76;
-  
 }
 
 header nav {
@@ -90,7 +88,7 @@ section {
   padding: 50px 0;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;  
+  justify-content: space-between;
   width: 100%;
 }
 .aboutmebox h2 {
@@ -121,10 +119,10 @@ section {
   margin: 10px;
 }
 
-.profile-pic h4, {
+.profile-pic h4 {
   position: absolute;
   bottom: 20px;
-  left: 20px;    
+  left: 20px;
   font-size: 26px;
 }
 
@@ -154,20 +152,20 @@ section {
   justify-content: space-around;
 }
 
-  /* Project1 */
+/* Project1 */
 .flex-item1 {
   /* make each one 45%, putting 10% between each element on the page */
   width: 45%;
   /* rounded corners */
   border-radius: 14px;
-  border: 4px ;
+  border: 4px;
   background-color: #a8adba;
   font-size: 22px;
   font-weight: bold;
   /* put space between each one vertically */
   margin-bottom: 15px;
   /* for files in local images folder, use url('../images/file-name.jpg') */
-  background-image: url('../css/images/DinnerNMovie.png');
+  background-image: url("../css/images/hi5.png");
   /* tell background to fit box no matter what */
   background-size: cover;
   /* crop it at the center */
@@ -198,14 +196,14 @@ section {
   width: 45%;
   /* rounded corners */
   border-radius: 14px;
-  border: 4px ;
+  border: 4px;
   background-color: #a8adba;
   font-size: 22px;
   font-weight: bold;
   /* put space between each one vertically */
   margin-bottom: 15px;
   /* for files in local images folder, use url('../images/file-name.jpg') */
-  background-image: url('../css/images/projects.jpeg');
+  background-image: url("../css/images/projects.jpeg");
   /* tell background to fit box no matter what */
   background-size: cover;
   /* crop it at the center */
@@ -219,20 +217,20 @@ section {
   flex-direction: column;
 }
 
-/* flex child */
+/* flex child 2*/
 .flex-item2 {
   /* make each one 45%, putting 10% between each element on the page */
   width: 45%;
   /* rounded corners */
   border-radius: 14px;
-  border: 4px ;
+  border: 4px;
   background-color: #a8adba;
   font-size: 22px;
   font-weight: bold;
   /* put space between each one vertically */
   margin-bottom: 15px;
   /* for files in local images folder, use url('../images/file-name.jpg') */
-  background-image: url('../css/images/horiseon.png');
+  background-image: url("../css/images/DinnerNMovie.png");
   /* tell background to fit box no matter what */
   background-size: cover;
   /* crop it at the center */
@@ -246,8 +244,35 @@ section {
   flex-direction: column;
 }
 
+/* flex child 3*/
+.flex-item3 {
+  /* make each one 45%, putting 10% between each element on the page */
+  width: 45%;
+  /* rounded corners */
+  border-radius: 14px;
+  border: 4px;
+  background-color: #a8adba;
+  font-size: 22px;
+  font-weight: bold;
+  /* put space between each one vertically */
+  margin-bottom: 15px;
+  /* for files in local images folder, use url('../images/file-name.jpg') */
+  background-image: url("../css/images/horiseon.png");
+  /* tell background to fit box no matter what */
+  background-size: cover;
+  /* crop it at the center */
+  background-position: center;
+  /* padding top and bottom 20px, 0 for left/right */
+  padding: 20px 0;
+  /* set minimum heigh value so there's room */
+  min-height: 250px;
+  /* rather than use position...use flexbox and create column instead of row */
+  display: flex;
+  flex-direction: column;
+}
 /* for text area inside of flex item */
-.flex-item span a, .flex-item1 span a {
+.flex-item span a,
+.flex-item1 span a {
   /* pushes element to bottom of flex item */
   margin-top: auto;
   width: 100%;
@@ -257,13 +282,14 @@ section {
   text-align: center;
 }
 
-.flex-item span a:hover , .flex-item1 span a:hover{
+.flex-item span a:hover,
+.flex-item1 span a:hover {
   background: rgba(2, 78, 118, 0.2);
-  color: #024e76;  
+  color: #024e76;
 }
 
- /* footer start */
- footer {
+/* footer start */
+footer {
   background: #d4d4d4;
   padding: 40px 400px 40px 0px;
   display: flex;
@@ -278,9 +304,8 @@ footer h2 {
   margin: 0;
 }
 
-footer div ul{
+footer div ul {
   line-height: 1.5;
-  
 }
 /* footer ends */
 
@@ -320,7 +345,8 @@ footer div ul{
     font-size: 20px;
   }
 
-  footer h2, footer div {
+  footer h2,
+  footer div {
     text-align: center;
     width: 100%;
   }
@@ -332,7 +358,6 @@ footer div ul{
   .section-title {
     width: 80%;
   }
-  
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -346,13 +371,12 @@ footer div ul{
     text-align: center;
   }
 
-.profile-pic {
-  flex: 0 32%;
-  margin-right: 0;
-  margin-top: 15px;
-  margin-bottom: 15;
-}
-
+  .profile-pic {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -364,5 +388,4 @@ footer div ul{
   .section-title {
     width: 95%;
   }
-
 }
